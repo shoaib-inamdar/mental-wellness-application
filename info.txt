@@ -1,5 +1,9 @@
 ##how to print and get input
 => 🔸print(); ->for printing
+        🔰 for printing variables we use $ sign 
+           eg. var a="shoaib";
+           print("hello $a");
+           this will print ==> hello shoaib
 => 🔸stdin.readLineSync(); ->for getting input
 
 ##types of data types
@@ -20,3 +24,89 @@
     🔸double ->for decimal value
     🔸num ->for both decimal and integer
     🔸bool ->for true or false
+
+## class in dart
+==> classes are declared same as in c++ language
+    🔸creating objects
+        🔻use new keyword and store it in a variable
+           eg:. new name= name();
+        🔻and can access the functions of the class using that variable
+           eg:. name.printname(); 
+        🔻 adding parameters
+            syntax:. printname(datatype object){
+            print(object);
+        }
+            eg:. printname(String name){
+            print(name);
+        }
+
+## creating list in dart
+    🔰 you can add any value of any datatype in lists
+==> syntax
+    var list_name=[value1,value2,value3,...value_n];
+    🔸functions to perform on lists🔸
+    1) add function
+    eg:. list_name.add(value);
+
+    2)addAll function
+     used to add many values at a time
+     eg. var name=[];
+        name.addAll(list_name);
+        this will add all the values from the list_name in the name[];
+
+    3)insert(index,element);
+    this function is used to add values to certain indexes
+    eg.. names.insert(2,100);
+
+    4)insertAll(index,iterable)
+    this function inserts many values from a particular index
+    eg.. names.insertAll(3,list_name);
+
+    5)replaceRange(start,end,[values_to_add]);
+    this function is used to replace values
+    eg.. names.replaceRange(2,5,[3,6,5,3,4]);
+    
+    6)removeLast();
+    this function is used to remove last element from list
+    eg.. names.removeLast();
+    
+    7)remove(value)
+    this function removes the particular value from the list
+    eg. names.remove(value);
+
+    8)removeAt(index_value);
+    this function is used to remove element from a specific index
+    eg.. names.removeAt(2);
+
+    9)removeRange(start,end);
+    this function is used to remove element from a particular range from the list
+    eg.. names.removeRange(2,5);
+
+    10)length
+    this is used to get the length of the list
+    eg. names.length
+
+    11)reversed
+    this is used to reverse the elements in the list
+    eg. names.reversed
+
+    12)first
+    this is used to print the first element of the list
+    eg. names.first
+
+    14)last
+    this is used to print the last element of the list
+    eg. names.last
+
+    15)isEmpty
+    this is used to check if the list is empty or not 
+    if empty then it returns true;
+    if not empty then it returns false;
+    eg. names.isEmpty
+
+    16)isNotEmpty
+    this is just the vice-versa of isEmpty
+
+    17)elementAt(index_value);
+    this gives the element at certain index
+    eg. names.elementAt(3);
