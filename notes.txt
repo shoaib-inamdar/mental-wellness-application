@@ -1,17 +1,18 @@
-##how to print and get input
+<-------------how to print and get input----------------------->
 => 🔸print(); ->for printing
         🔰 for printing variables we use $ sign 
            eg. var a="shoaib";
            print("hello $a");
            this will print ==> hello shoaib
 => 🔸stdin.readLineSync(); ->for getting input
+====================================================================
 
-##types of data types
-=>
-    🔸int 
-    🔸BigInt ->for bigger integer value
-    🔸String ->for string
-    🔸var ->takes the first value assigned to it as it type;
+<------------------types of data types-------------------------->
+
+    1)int 
+    2)BigInt ->for bigger integer value
+    3)String ->for string
+    4)var ->takes the first value assigned to it as it type;
     ===>> eg. var a= "hello";
               a=12;--> this will give an error and will say that the variable is string type not int type
                 ==> (this is possible only if it is given value on its initialization)
@@ -21,28 +22,33 @@
         a="shoaib";
         a=1.4;
         >>>all this is possible and it will not show any error
-    🔸double ->for decimal value
-    🔸num ->for both decimal and integer
-    🔸bool ->for true or false
+    5)double ->for decimal value
+    6)num ->for both decimal and integer
+    7)bool ->for true or false
+    8)final -> cannot assign value second time and can be assigned
+    9)const -> it must be initialized at the time of declaration
+=======================================================================
 
-## class in dart
+<-----------------------class in dart--------------------------->
+
 ==> classes are declared same as in c++ language
     🔸creating objects
-        🔻use new keyword and store it in a variable
+        🎇use new keyword and store it in a variable
            eg:. new name= name();
-        🔻and can access the functions of the class using that variable
+        🎇and can access the functions of the class using that variable
            eg:. name.printname(); 
-        🔻 adding parameters
+        🎇 adding parameters
             syntax:. printname(datatype object){
             print(object);
         }
             eg:. printname(String name){
             print(name);
         }
+======================================================================
 
-## creating list in dart
+<---------------------creating list in dart--------------------->
     🔰 you can add any value of any datatype in lists
-==> syntax
+        🌟 syntax
     var list_name=[value1,value2,value3,...value_n];
     🔸functions to perform on lists🔸
     1) add function
@@ -110,3 +116,47 @@
     17)elementAt(index_value);
     this gives the element at certain index
     eg. names.elementAt(3);
+======================================================================
+
+<<<----------------creating maps in dart-------------------------->>>
+    🔰 they have syntax just like objects in javascript
+    🌟syntax:
+        var map_name={
+            "key1":"value1",
+            "key2":"value2"
+        };
+    🎇is this key-> should always be a string and the value can me any datatype
+    🎇 the key is case-sensitive
+    🌟to fetch the values do this
+    eg. print(map_name["key1"]);
+
+    !! another way of defining a map is:
+         🌟syntax:
+            var map_name=Map();
+    
+    <===function of maps===>
+    1)isEmpty
+    => same as list functions
+
+    2)isNotEmpty
+    => same as list functions
+
+    3)length
+    => same as list functions
+
+    4)keys
+    ==> gives the keys present in the map
+
+    5)values
+    ==>gives the values present in the map
+
+    6)containsKey(key)
+    => gives to true if the key is present 
+    and false if not present
+
+    7)containsValue(value)
+    => vice-versa of containsKey
+
+    8)remove(key)
+    => same as list functions
+====================================================================
