@@ -1,22 +1,22 @@
 ##how to print and get input
-=> print(); ->for printing
-=> stdin.readLineSync(); ->for getting input
+=> 🔸print(); ->for printing
+=> 🔸stdin.readLineSync(); ->for getting input
 
 ##types of data types
 =>
-    int 
-    BigInt ->for bigger integer value
-    String ->for string
-    var ->takes the first value assigned to it as it type;
+    🔸int 
+    🔸BigInt ->for bigger integer value
+    🔸String ->for string
+    🔸var ->takes the first value assigned to it as it type;
     ===>> eg. var a= "hello";
               a=12;--> this will give an error and will say that the variable is string type not int type
                 ==> (this is possible only if it is given value on its initialization)
-        but if it declared and initialized later then it can take any value in run time 
+        🛑but if it declared and initialized later then it can take any value in run time 
         eg. var a;
         a=21;
         a="shoaib";
         a=1.4;
         >>>all this is possible and it will not show any error
-    double ->for decimal value
-    num ->for both decimal and integer
-    bool ->for true or false
+    🔸double ->for decimal value
+    🔸num ->for both decimal and integer
+    🔸bool ->for true or false
